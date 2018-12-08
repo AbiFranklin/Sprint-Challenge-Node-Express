@@ -8,7 +8,7 @@ const parser = express.json();
 server.use(parser);
 
 server.use('/api/projects', projectRouter);
-// server.use('/api/actions', actionRouter);
+server.use('/api/actions', actionRouter);
 
 server.get('/', (req, res) => {
     res.send('RUNNING');
