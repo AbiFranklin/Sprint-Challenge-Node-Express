@@ -15,7 +15,7 @@ server.get('/', (req, res) => {
 })
 
 
-const PORT = 5507;
+const PORT = process.env.PORT || 5507;
 server.listen(PORT, () => {
     console.log(`Server is super running on port ${PORT}.`);
 })
